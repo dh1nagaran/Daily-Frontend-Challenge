@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #171616;
+      }
+      .main {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 1rem;
+        border-radius: 5px;
+        box-sizing: content-box;
+        background-color: #f95c4b;
+      }
+      input {
+        width: 70%;
+        padding: 10px 5px;
+        cursor: text;
+        border: none;
+        outline: none;
+        color: #171616;
+        border-radius: 5px;
+      }
+      p {
+        color: white;
+        font-weight: 400;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        color: white;
+        background-color: #f95c4b;
+        border: 1px solid #171616;
+        border-radius: 5px;
+      }
+      button {
+        width: 70%;
+        padding: 10px 5px;
+        cursor: pointer;
+        color: #f95c4b;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <input type="text" id="url" placeholder="Enter Your URL" />
+      <p id="para"></p>
+      <img src="" id="get-img" alt="QR-CODE" />
+      <button onclick="GetQr()">Get Qr</button>
+    </div>
+    <script>
+      let url = document.getElementById("url");
+      let img = document.getElementById("get-img");
+      let para = document.getElementById("para");
+	  if(img.src) img.style.display="none";
+	  else  img.style.display="block";
+      function GetQr() {
+        console.log(img);
+        if (url.value.trim().length > 0) {
+          img.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${url.value}`;
+          para.innerHTML = "";
+		  img.style.display="block";
+        } else {
+          para.textContent = "Enter the data";
+          img.src = "";
+		  img.style.display="none";
+        }
+      }
+    </script>
+  </body>
+</html>
