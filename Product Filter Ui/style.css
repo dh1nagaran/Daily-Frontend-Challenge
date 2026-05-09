@@ -61,4 +61,11 @@
         background: rgba(255, 255, 255, 0.1);
         border: 2px solid #ffffff75;
         backdrop-filter: 2px solid rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+      h5 {
+        color: #0d6dfd;
+      }
+      p {
+        color: grey;
       }
