@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "TASA Orbiter", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff75;
+    backdrop-filter: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+.light {
+    background-image: url("https://media.istockphoto.com/id/1450888838/photo/blue-sky-with-white-cloud-background.jpg?s=612x612&w=0&k=20&c=SvKS2DYmtaOAvI8gaqKARGi7pgIrK4gXv_KO-zozeZI=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark {
+    background-image: url("https://images.unsplash.com/photo-1616426880904-ad53d12ff61a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.moon,
+.sun {
+    color: white;
+    cursor: pointer;
+}
+
+.theme {
+    background-color: transparent;
+    text-align: end;
+}
+
+.main-contain {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+h2 {
+    font-size: 40px;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
