@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css"/> 
+</head>
+  <body>
+    <div class="main">
+      <div>
+      <input type="text" id="inp-data"/>
+      <button onclick="change()"><i class="fas fa-search" style="color: white;"></i></button>
+      </div>
+    <div class="main-container">
+      <div class="contain-1">
+        <h1 id="temp"></h1>
+        <h4 id="w-data"></h4>
+        <h2 id="city"></h2>
+      </div>
+      <div class="wind">
+        <label>
+          <i class="fa-solid fa-wind" style="color: white;"></i>
+      <p id="speed"></p>
+      </label>
+        <label>
+          <i class="fa-solid fa-droplet" style="color: white;"></i>
+      <p id="humi"></p>
+      </label>
+ </div>
+    </div>
+  </body>
+  <script src="./weather.js"></script>
+</html>
