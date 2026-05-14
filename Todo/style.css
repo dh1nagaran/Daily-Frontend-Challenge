@@ -13,39 +13,77 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    background: linear-gradient(to right, #ffcc33, #ffb347);
+    font-family: "TASA Orbiter", sans-serif;
+
 }
 
 main {
     height: fit-content;
     margin-top: 100px;
     padding: 10px;
-    border: 2px solid black;
     border-radius: 5px;
+    background-color: white;
+    border: 2px solid #ffcc33;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 input,
 button {
     padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: #ffcc33;
+    outline: white;
+    font-weight: 600;
+}
+
+button {
     cursor: pointer;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-contain {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
 }
 
 #contain-2 {
     margin-top: 20px;
     height: 250px;
-    border: 2px solid black;
     border-radius: 5px;
     overflow: scroll;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     padding: 20px 10px;
+    background-color: #ffcc33;
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+p {
+    color: #ffcc33;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .icon {
-    stroke-width: 1.5px;
+    stroke-width: 2px;
     width: 18px;
     height: 18px;
-    color: red;
+    color: white;
+    cursor: pointer;
 }
 
 label {
